@@ -8149,7 +8149,9 @@
 <hr />
 <h3 aria-label="Functions" id="getrandompickupvelocity">GetRandomPickupVelocity ()<a class="headerlink" href="#getrandompickupvelocity" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable" id="vector-getrandompickupvelocity-vector-position-rng-rng-nil-int-velocitytype-0"><a href="Vector.html">Vector</a> GetRandomPickupVelocity ( <a href="Vector.html">Vector</a> Position, <a href="RNG.html">RNG</a> RNG = nil, int VelocityType = 0 )<a class="headerlink" href="#vector-getrandompickupvelocity-vector-position-rng-rng-nil-int-velocitytype-0" title="Permanent link">⚓︎</a></h4>
-<p><code>VelocityType</code> seems to only affect pickups in Challenge Rooms, causing them to have a weaker velocity.</p>
+<p><code>VelocityType</code> 0 will shoot pickups in a random direction around the wanted position.
+<code>VelocityType</code> 1 will shoot pickups in a cone pointing down, mostly used for Beggar payouts.
+<code>VelocityType</code> also seems to affect pickups in Challenge Rooms, causing them to have a weaker velocity.</p>
 <details class="warning" open="open">
 <summary>Warning</summary>
 <p>This is a static function and must be called via <code>EntityPickup.GetRandomPickupVelocity(Position, RNG, VelocityType)</code>.</p>
